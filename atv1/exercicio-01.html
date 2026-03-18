@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h2>Juros compostos</h1>
+    valor investido
+    <input type="number" id="valoIV" value="0" min="0" oninput="calcularJurosCompostos(valoIV.value,quacad.value)" />
+
+    <br>
+
+    quantidade de messes
+    <input type="number" id="quacad" value="0" min="0" oninput="calcularJurosCompostos(valoIV.value,quacad.value)" />
+    <div id="resposta">Nem um mês</div>
+
+     valor final do investimento
+    <div id="valordes">R$0</div>
+    <br>
+    <div id="t">R$0 em nem um mês virou R$0</div>
+    
+    <script src="exercicio-01.js">
+      // let messes = 0, valor = 0, tjuros = 1.5
+      // valordes.textContent = `R$${valor + valor * (valor * 0.05)}`;
+
+      // function cal() {
+      //   messes = quacad.value;
+      //   valor = valoIV.value;
+      //   resposta.textContent = `${messes != 0?messes:"Nem um"} ${messes > 1?"messes":"mês"}`;
+      //   valordes.textContent = `R$${valor * (1 + tjuros)**messes}`;
+      // }
+    </script>
+  </body>
+</html>
